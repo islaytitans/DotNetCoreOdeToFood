@@ -1,4 +1,4 @@
-{
+﻿{
   "dependencies": {
     "Microsoft.AspNetCore.StaticFiles": "1.1.0",
     "Microsoft.AspNetCore.Diagnostics": "1.1.0",
@@ -22,6 +22,10 @@
         "portable-net45+win8"
       ]
     }
+  },
+
+  "runtimes": {
+    "win10-x64": {}
   },
 
   "buildOptions": {
