@@ -1,11 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration;
 
-namespace OdeToFood
+namespace OdeToFood.Services
 {
-    public interface IGreeter
-    {
-        string GetGreeting();
-    }
     public class Greeter : IGreeter
     {
         private string _greeting;
