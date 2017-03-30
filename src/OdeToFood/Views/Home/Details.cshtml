@@ -1,0 +1,11 @@
+﻿@using OdeToFood.Controllers
+
+@model OdeToFood.DomainModels.Restaurant
+
+<h1>@Model.Name</h1>
+
+<div>Info</div>
+
+<div>
+    @Html.ActionLink("Home", nameof(HomeController.Index))
+</div>

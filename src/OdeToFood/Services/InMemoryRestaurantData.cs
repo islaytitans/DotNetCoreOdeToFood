@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using OdeToFood.Models;
+using OdeToFood.DomainModels;
 
 namespace OdeToFood.Services
 {
@@ -23,6 +23,11 @@ namespace OdeToFood.Services
         public IEnumerable<Restaurant> GetAll()
         {
             return _restaurants;
+        }
+
+        public Restaurant Get(int id)
+        {
+            return _restaurants.FirstOrDefault(r => r.Id.Equals(id));
         }
     }
 }
