@@ -4,11 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using OdeToFood.Enums;
 
-namespace OdeToFood.DomainModels
+namespace OdeToFood.ViewModels
 {
-    public class Restaurant
+    public class RestaurantEditViewModel
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public CuisineType Cuisine { get; set; }
     }

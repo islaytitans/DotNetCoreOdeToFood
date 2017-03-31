@@ -4,8 +4,10 @@
 
 <h1>@Model.Name</h1>
 
-<div>Info</div>
-
+<div>@Model.Id</div>
+<div>
+    Cuisine: @Model.Cuisine
+</div>
 <div>
     @Html.ActionLink("Home", nameof(HomeController.Index))
 </div>
