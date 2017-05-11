@@ -13,6 +13,7 @@
         @Html.ValidationSummary()
         @using (Html.BeginForm())
         {
+            @Html.AntiForgeryToken()
             <div>
                 @Html.LabelFor(m => m.Name)
                 @Html.EditorFor(m => m.Name)

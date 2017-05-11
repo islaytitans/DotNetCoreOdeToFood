@@ -37,5 +37,10 @@ namespace OdeToFood.Services
 
             return newRestaurant;
         }
+
+        public void Commit()
+        {
+            // No operation required
+        }
     }
 }
