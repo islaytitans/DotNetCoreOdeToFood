@@ -49,7 +49,7 @@ namespace OdeToFood.Controllers
             var model = _restaurantData.Get(id);
             if (model == null)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
 
             return View(model);
@@ -62,7 +62,7 @@ namespace OdeToFood.Controllers
             var restuarant = _restaurantData.Get(id);
             if (restuarant == null)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
 
             if (ModelState.IsValid)
@@ -72,7 +72,7 @@ namespace OdeToFood.Controllers
 
                 _restaurantData.Commit();
 
-                return RedirectToAction("Details", new {id = restuarant.Id});
+                return RedirectToAction(nameof(Details), new {id = restuarant.Id});
             }
 
             return View(model);
